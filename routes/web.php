@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 use Zega\CoreBanking\Facades\Loan;
 
 Route::get('/', function () {
-    // return view('welcome');
+    return view('welcome');
 
     return Loan::list()->json();
 });
