@@ -1,0 +1,31 @@
+{
+    "name": "zega/core-banking",
+    "description": "Musoni Core Banking Laravel Package for Zega",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Myat Thu",
+            "email": "mr.myatthu027@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.0.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Zega\\CoreBanking\\": "src/"
+        },
+        "files": [
+            "src/Helpers/helpers.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Zega\\CoreBanking\\CoreBankingServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev"
+}
